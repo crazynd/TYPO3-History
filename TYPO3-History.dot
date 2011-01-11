@@ -13,13 +13,16 @@
  */
 
 digraph t3history {
+    label="History of TYPO3";
+    labelloc=t;
     rankdir=LR;
     ranksep=equally;
-    title="Stand 2011";
+    size="11.69,8.27";
+    fontname="Helvetica";
 
     { /* Timeline… */
         node [shape=plaintext];
-        1997 -> 1998 -> 1999 -> 2000 -> 2001 -> 2002 ->
+       /* 1997 -> 1998 -> 1999 -> 2000 -> 2001 -> */ 2002 ->
         2003 -> 2004 -> 2005 -> 2006 -> 2007 -> 2008 ->
         2009 -> 2010 -> 2011;
     }
