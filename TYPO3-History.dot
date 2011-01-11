@@ -29,7 +29,9 @@ digraph t3history {
 
     node [shape=box];
     { rank = same; 2002;
-      "TYPO3 3.3.0";
+      /* typo3.com/History.1268.0.html */
+      "TYPO3 3.0.0";
+      "TYPO3 3.3.0"
     }
     { rank = same; 2003;
       "TYPO3 3.5.0";
