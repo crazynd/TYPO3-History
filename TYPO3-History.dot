@@ -1,0 +1,83 @@
+/*                                                                      *
+ * This work is licensed under the                                      *
+ *                                                                      *
+ *        Creative Commons Attribution 3.0 Unported (CC BY 3.0)         *
+ *                                                                      *
+ * You are free to share and remix this work as long as you specify the *
+ * original author.                                                     *
+ *                                                                      *
+ * More information on this and other Creative Commons licenses can be  *
+ * found under: http://creativecommons.org/licenses/                    *
+ *                                                                      *
+ * @author Andreas Lappe <nd@off-pist.de>                               *
+ */
+
+digraph t3history {
+    rankdir=LR;
+    ranksep=equally;
+    title="Stand 2011";
+
+    { /* Timeline… */
+        node [shape=plaintext];
+        1997 -> 1998 -> 1999 -> 2000 -> 2001 -> 2002 ->
+        2003 -> 2004 -> 2005 -> 2006 -> 2007 -> 2008 ->
+        2009 -> 2010 -> 2011;
+    }
+
+    node [shape=box];
+    { rank = same; 2004;
+      "TYPO3 3.6.0–3.6.2";
+      "TYPO3 3.7.0" 
+    }
+    { rank = same; 2005;
+      "TYPO3 3.7.1";
+      "TYPO3 3.8.0";
+    }
+    { rank = same; 2006;
+      "TYPO3 4.0.0–4.0.3";
+    }
+    { rank = same; 2007;
+      "TYPO3 4.0.4–4.0.8";
+      "TYPO3 4.1.0–4.1.5";
+    }
+    { rank = same; 2008;
+      "TYPO3 4.0.9";
+      "TYPO3 4.1.6–4.1.7";
+      "TYPO3 4.2.0–4.2.3";
+      "FLOW3 1.0.0a1"
+    }
+    { rank = same; 2009;
+      "TYPO3 4.0.10–4.0.13 ☠";
+      "TYPO3 4.1.8–4.1.13";
+      "TYPO3 4.2.4–4.2.10";
+      "TYPO3 4.3.0";
+      "FLOW3 1.0.0a2–1.0.0a6"
+    }
+    { rank = same; 2010;
+      "TYPO3 4.1.14–4.1.15 ☠";
+      "TYPO3 4.2.11–4.2.17";
+      "TYPO3 4.3.1–4.3.10";
+      "TYPO3 4.4.0–4.4.6";
+      "FLOW3 1.0.0a7–1.0.0a14";
+    }
+    { rank = same; 2011;
+      "TYPO3 4.4.7";
+      "TYPO3 4.5.0";
+    }
+
+    /* 3.7-line: */
+    "TYPO3 3.7.0" -> "TYPO3 3.7.1";
+    /* 4.0-line: */
+    "TYPO3 4.0.0–4.0.3" -> "TYPO3 4.0.4–4.0.8" -> "TYPO3 4.0.9" -> "TYPO3 4.0.10–4.0.13 ☠";
+    /* 4.1-line: */
+    "TYPO3 4.1.0–4.1.5" -> "TYPO3 4.1.6–4.1.7" -> "TYPO3 4.1.8–4.1.13" -> "TYPO3 4.1.14–4.1.15 ☠";
+    /* 4.2-line: */
+    "TYPO3 4.2.0–4.2.3" -> "TYPO3 4.2.4–4.2.10" -> "TYPO3 4.2.11–4.2.17";
+    /* 4.3-line: */
+    "TYPO3 4.3.0" -> "TYPO3 4.3.1–4.3.10";
+    /* 4.4-line: */
+    "TYPO3 4.4.0–4.4.6" -> "TYPO3 4.4.7";
+    /* FLOW3: */
+    "FLOW3 1.0.0a1" -> "FLOW3 1.0.0a2–1.0.0a6" -> "FLOW3 1.0.0a7–1.0.0a14";
+
+}
