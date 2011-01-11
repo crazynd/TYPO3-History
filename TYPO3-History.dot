@@ -25,13 +25,19 @@ digraph t3history {
     }
 
     node [shape=box];
+    { rank = same; 2002;
+      "TYPO3 3.3.0";
+    }
+    { rank = same; 2003;
+      "TYPO3 3.5.0";
+    }
     { rank = same; 2004;
       "TYPO3 3.6.0–3.6.2";
       "TYPO3 3.7.0" 
     }
     { rank = same; 2005;
       "TYPO3 3.7.1";
-      "TYPO3 3.8.0";
+      "TYPO3 3.8.0–3.8.1";
     }
     { rank = same; 2006;
       "TYPO3 4.0.0–4.0.3";
@@ -80,4 +86,15 @@ digraph t3history {
     /* FLOW3: */
     "FLOW3 1.0.0a1" -> "FLOW3 1.0.0a2–1.0.0a6" -> "FLOW3 1.0.0a7–1.0.0a14";
 
+    /* Interversion hops: */
+    "TYPO3 3.3.0" -> "TYPO3 3.5.0";
+    "TYPO3 3.5.0" -> "TYPO3 3.6.0–3.6.2";
+    "TYPO3 3.6.0–3.6.2" -> "TYPO3 3.7.0";
+    "TYPO3 3.7.1" -> "TYPO3 3.8.0–3.8.1";
+    "TYPO3 3.8.0–3.8.1" -> "TYPO3 4.0.0–4.0.3";
+    "TYPO3 4.0.4–4.0.8" -> "TYPO3 4.1.0–4.1.5";
+    "TYPO3 4.1.6–4.1.7" -> "TYPO3 4.2.0–4.2.3";
+    "TYPO3 4.2.4–4.2.10" -> "TYPO3 4.3.0";
+    "TYPO3 4.3.1–4.3.10" -> "TYPO3 4.4.0–4.4.6";
+    "TYPO3 4.4.7" -> "TYPO3 4.5.0";
 }
